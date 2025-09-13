@@ -10,7 +10,7 @@ permissions:
 jobs:
   manualvalidation: 
     if: startsWith(github.ref, 'refs/heads/main')
-    needs: checkoutrepo
+    
     runs-on: ubuntu-latest
     environment:
       name:  dev
