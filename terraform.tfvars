@@ -6,5 +6,5 @@ rg = {
         location = "West US"
     },
 "rg-varshney3" = {
-        location = "centralindia""
+        location = "centralindia"
 }
