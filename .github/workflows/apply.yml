@@ -1,13 +1,16 @@
-on: 
-  push:
-    branches:
-      - main
-      
-     
+name: terragormapply
+on:
+  workflow_run:
+    workflows: ["terraformplan"]
+    types:
+      - completed
 permissions: 
   id-token: write       
   contents: read
 jobs:
+  apply:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: self-hoste
   manualvalidation: 
     if: startsWith(github.ref, 'refs/heads/main')
     
