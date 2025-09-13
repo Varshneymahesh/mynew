@@ -33,7 +33,7 @@ jobs:
       run: terraform plan
       working-directory: ./
   manualvalidation: 
-    if: github.ref == 'refs/heads/main'
+    if: startsWith(github.ref, 'refs/heads/main')
     needs: checkoutrepo
     runs-on: ubuntu-latest
     environment:
@@ -41,7 +41,7 @@ jobs:
     steps:
       - run: echo "Waiting for manual approval..."
   Terraformapply:
-    if: github.ref == 'refs/heads/main'
+    if: startsWith(github.ref, 'refs/heads/main')
     needs: manualvalidation
     runs-on: self-hosted
     steps:
