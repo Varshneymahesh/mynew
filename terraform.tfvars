@@ -1,11 +1,16 @@
 rg = {
-    "rg-varshney" = {
-        location = "East US"
-    },
-    "rg-varshney2" = {
-        location = "West US"
-    },
-"rg-varshney3" = {
+    myrg01 = {
         location = "centralindia"
-}
+    },
+    myrg02 = {
+        location = "eastus"
+    },
+
+    myrg03 = {
+        location = "westeurope"
+    },
+    myrg04 = {
+        location = "southeastasia"
+    }
+
 }
