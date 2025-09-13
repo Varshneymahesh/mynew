@@ -4,5 +4,7 @@ rg = {
     },
     "rg-varshney2" = {
         location = "West US"
-    }
+    },
+"rg-varshney3" = {
+        location = "centralindia""
 }
