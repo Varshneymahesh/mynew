@@ -11,6 +11,9 @@ rg = {
     },
     myrg04 = {
         location = "southeastasia"
+    },
+    myrg05 = {
+        location = "australiaeast"
     }
 
 }
