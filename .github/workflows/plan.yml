@@ -1,4 +1,4 @@
-name: terragormplan
+name: terraformplan
 on: 
   push:
     branches:
